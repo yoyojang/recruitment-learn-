@@ -1,10 +1,46 @@
 from django.contrib import admin
-
+from django.http import HttpResponse
 from interview.models import Candidate
+
+import csv
+from datetime import datetime
 # Register your models here.
+
+exportable_fields = ('username', 'city', 'phone', 'bachelor_school', 'master_school', 'degree', 'first_result',
+                     'first_interviewer_user', 'second_result', 'second_interviewer_user', 'hr_result', 'hr_score', 'hr_remark', 'hr_interviewer_user')
+
+def export_model_as_csv(modeladmin, request, queryset):
+    # 页面动作执行导出csv的功能
+    response = HttpResponse(content_type='text/csv')
+    field_list = exportable_fields
+    response['Content-Disposition'] = 'attachment; filename=recruitment-candidates-list-%s.csv' % (
+        datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+    )
+
+    # 写入表头
+    writer = csv.writer(response)
+    writer.writerow(
+        [queryset.model._meta.get_field(f).verbose_name.title() for f in field_list]
+    )
+
+    for obj in queryset:
+        ### 单行的记录（各个字段的值），写到csv文件
+        csv_line_value = []
+        for field in field_list:
+            field_object = queryset.model._meta.get_field(field)
+            field_value = field_object.value_from_object(obj)
+            print(field_value)
+            csv_line_value.append(field_value)
+        writer.writerow(csv_line_value)
+
+    return response
+
+export_model_as_csv.short_description = u'导出为CSV文件'
 
 class CandidateAdmin(admin.ModelAdmin):
     exclude = ('creator','created_date','modified_date')
+
+    actions = (export_model_as_csv,)    #添加页面动作
 
     list_display = (
         "username","city","bachelor_school","first_score","first_result","first_interviewer_user",
