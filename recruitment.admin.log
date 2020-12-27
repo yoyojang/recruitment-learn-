@@ -568,3 +568,37 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'tr
 2020-12-27 21:45:57,833 django.request 224 WARNING  Not Found: /favicon.ico
 2020-12-27 21:45:59,434 django.request 224 WARNING  Not Found: /favicon.ico
 2020-12-27 21:46:01,208 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:57:55,736 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 21:57:57,802 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:58:03,335 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:58:14,177 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:58:17,779 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:59:14,084 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:01:46,915 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:01:50,681 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:01:52,232 django.request 224 WARNING  Not Found: /resume/add/
+2020-12-27 22:01:52,652 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:03:37,112 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\urls.py changed, reloading.
+2020-12-27 22:03:39,520 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 22:03:41,060 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:03:43,889 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:04:43,230 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:04:44,898 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:04:54,732 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:04:56,707 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:04:58,202 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:10:39,559 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\views.py changed, reloading.
+2020-12-27 22:10:42,354 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 22:11:06,329 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\views.py changed, reloading.
+2020-12-27 22:11:09,325 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 22:11:21,502 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\views.py changed, reloading.
+2020-12-27 22:11:24,356 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 22:11:29,995 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:11:41,705 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:11:43,797 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:11:46,205 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:12:57,512 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:13:00,783 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:13:04,721 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:13:06,285 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 22:13:09,589 django.request 224 WARNING  Not Found: /favicon.ico
