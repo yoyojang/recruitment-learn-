@@ -9,3 +9,269 @@
 2020-12-27 17:28:50,469 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
 2020-12-27 17:29:26,964 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
 2020-12-27 17:40:27,660 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:52:47,921 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:53:21,075 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 17:53:23,275 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:53:26,729 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1689, in changelist_view
+    if not self.has_view_or_change_permission(request):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 533, in has_view_or_change_permission
+    return self.has_view_permission(request, obj) or self.has_change_permission(request, obj)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 528, in has_view_permission
+    request.user.has_perm('%s.%s' % (opts.app_label, codename_view)) or
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\models.py", line 294, in has_perm
+    return _user_has_perm(self, perm, obj)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\models.py", line 200, in _user_has_perm
+    for backend in auth.get_backends():
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 37, in get_backends
+    return _get_backends(return_tuples=False)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 26, in _get_backends
+    backend = load_backend(backend_path)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 20, in load_backend
+    return import_string(path)()
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Program Files\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django_python3_ldap'
+2020-12-27 17:53:55,404 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:53:58,979 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1689, in changelist_view
+    if not self.has_view_or_change_permission(request):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 533, in has_view_or_change_permission
+    return self.has_view_permission(request, obj) or self.has_change_permission(request, obj)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 528, in has_view_permission
+    request.user.has_perm('%s.%s' % (opts.app_label, codename_view)) or
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\models.py", line 294, in has_perm
+    return _user_has_perm(self, perm, obj)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\models.py", line 200, in _user_has_perm
+    for backend in auth.get_backends():
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 37, in get_backends
+    return _get_backends(return_tuples=False)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 26, in _get_backends
+    backend = load_backend(backend_path)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 20, in load_backend
+    return import_string(path)()
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Program Files\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django_python3_ldap'
+2020-12-27 17:54:07,054 django.request 224 ERROR    Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 251, in wrapper
+    return self.admin_view(view, cacheable)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 502, in index
+    app_list = self.get_app_list(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 485, in get_app_list
+    app_dict = self._build_app_dict(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 430, in _build_app_dict
+    has_module_perms = model_admin.has_module_permission(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 546, in has_module_permission
+    return request.user.has_module_perms(self.opts.app_label)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\models.py", line 312, in has_module_perms
+    return _user_has_module_perms(self, app_label)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\models.py", line 215, in _user_has_module_perms
+    for backend in auth.get_backends():
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 37, in get_backends
+    return _get_backends(return_tuples=False)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 26, in _get_backends
+    backend = load_backend(backend_path)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\auth\__init__.py", line 20, in load_backend
+    return import_string(path)()
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\module_loading.py", line 17, in import_string
+    module = import_module(module_path)
+  File "C:\Program Files\Python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'django_python3_ldap'
+2020-12-27 18:02:24,107 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\settings\base.py changed, reloading.
+2020-12-27 18:02:26,550 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:13:51,394 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:13:53,789 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:13:56,860 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1568, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 679, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 70, in get_readonly_fields
+    group_names = self.get_group_names(request.user)
+AttributeError: 'CandidateAdmin' object has no attribute 'get_group_names'
+2020-12-27 18:14:42,826 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:14:45,676 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:16:35,609 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/5/change/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1656, in change_view
+    return self.changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1534, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1568, in _changeform_view
+    ModelForm = self.get_form(
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 679, in get_form
+    readonly_fields = self.get_readonly_fields(request, obj)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 70, in get_readonly_fields
+    group_names = self.get_group_names(request.user)
+AttributeError: 'CandidateAdmin' object has no attribute 'get_group_names'
+2020-12-27 18:19:57,310 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:19:59,588 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:21:13,525 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:21:15,884 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:21:19,692 interview.admin 79 INFO     interviewer is in user's group for yoyo3_inter
+2020-12-27 18:21:19,695 interview.admin 79 INFO     interviewer is in user's group for yoyo3_inter
+2020-12-27 18:21:51,877 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:21:56,942 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:21:59,775 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:23:16,828 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:23:19,294 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:23:20,768 interview.admin 79 INFO     interviewer is in user's group for yoyo3_inter
+2020-12-27 18:23:20,771 interview.admin 79 INFO     interviewer is in user's group for yoyo3_inter
+2020-12-27 18:23:21,642 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:23:46,477 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:23:48,846 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:23:51,149 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:28:48,015 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:28:51,181 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:29:37,411 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:29:40,275 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:29:53,909 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:29:56,160 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:29:58,257 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:33:09,120 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:33:11,345 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:33:27,523 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:33:29,160 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1693, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 78, in get_changelist_instance
+    self.list_editable = self.get_list_editable(request)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 74, in get_list_editable
+    return self.default_list_editable
+AttributeError: 'CandidateAdmin' object has no attribute 'default_list_editable'
+2020-12-27 18:33:29,791 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:34:18,412 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:34:20,571 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:34:35,363 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 18:34:37,563 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:34:42,011 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:35:11,655 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:35:14,657 django.request 224 WARNING  Not Found: /favicon.ico
