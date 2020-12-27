@@ -1,0 +1,10 @@
+2020-12-27 17:22:36,283 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:22:39,046 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 17:23:20,264 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 17:27:06,707 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 17:27:09,049 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:27:22,566 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 17:27:31,073 interview.admin 38 INFO     yoyo1_hr exported 2 candidate records
+2020-12-27 17:28:48,082 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 17:28:50,469 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 17:29:26,964 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
