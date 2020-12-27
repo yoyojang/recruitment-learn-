@@ -438,3 +438,15 @@ AttributeError: 'Options' object has no attribute 'app_lable'
 2020-12-27 19:28:44,500 django.request 224 WARNING  Not Found: /favicon.ico
 2020-12-27 19:28:46,635 django.request 224 WARNING  Not Found: /favicon.ico
 2020-12-27 19:29:12,670 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:53:26,904 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:06:22,438 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:06:55,870 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:06:59,610 django.security.SuspiciousSession 131 WARNING  Session data corrupted
+2020-12-27 20:06:59,663 django.security.SuspiciousSession 131 WARNING  Session data corrupted
+2020-12-27 20:07:00,642 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 20:07:11,272 django.security.SuspiciousSession 131 WARNING  Session data corrupted
+2020-12-27 20:07:12,395 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 20:13:20,938 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\settings\local.py changed, reloading.
+2020-12-27 20:13:24,098 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:15:12,025 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\dingtalk.py changed, reloading.
+2020-12-27 20:15:15,163 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader

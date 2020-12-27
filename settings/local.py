@@ -20,4 +20,5 @@ INSTALLED_APPS += (
 
 
 ## 钉钉群的 WEB_HOOK， 用于发送钉钉消息
-DINGTALK_WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=xxxxx"
+DINGTALK_WEB_HOOK = "https://oapi.dingtalk.com/robot/send?access_token=3e28a8bbd2ee664ca3e2083dcdbf5ac36a4593fdb9d0a9fda21be74dc90b541b"
+QYWX_WEB_HOOK = "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=edf47793-2156-4c21-9634-a58d67948916"
