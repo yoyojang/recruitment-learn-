@@ -9,14 +9,14 @@ from jobs.models import Citys,JobTypes
 
 def joblist(request):
     job_list = Job.objects.order_by('job_type')
-    template = loader.get_template('joblist.html')
+    # template = loader.get_template('joblist.html')
     context = {'job_list':job_list}
 
     for job in job_list:
         job.city_name = Citys[job.job_city][1]  # 由于是枚举类型，所以做个转化
         job.job_type = JobTypes[job.job_type][1]
 
-    return HttpResponse(template.render(context))
+    return render(request, 'joblist.html', context)
 
 def detail(request, job_id):
     try:

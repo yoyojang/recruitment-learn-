@@ -450,3 +450,121 @@ AttributeError: 'Options' object has no attribute 'app_lable'
 2020-12-27 20:13:24,098 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
 2020-12-27 20:15:12,025 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\dingtalk.py changed, reloading.
 2020-12-27 20:15:15,163 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:44:14,608 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:47:04,429 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:47:07,711 django.request 224 WARNING  Not Found: /account
+2020-12-27 20:47:12,363 django.request 224 WARNING  Not Found: /account
+2020-12-27 20:47:54,652 django.security.SuspiciousSession 131 WARNING  Session data corrupted
+2020-12-27 20:48:20,196 django.security.SuspiciousSession 131 WARNING  Session data corrupted
+2020-12-27 20:48:20,596 django.request 224 WARNING  Not Found: /
+2020-12-27 20:48:21,095 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 20:49:02,624 django.request 224 WARNING  Not Found: /
+2020-12-27 20:51:37,154 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\recruitment\urls.py changed, reloading.
+2020-12-27 20:51:40,173 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:51:40,585 django.request 224 WARNING  Not Found: /
+2020-12-27 20:51:42,515 django.request 224 WARNING  Not Found: /
+2020-12-27 20:54:07,645 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\urls.py changed, reloading.
+2020-12-27 20:54:10,049 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 20:54:23,924 django.request 224 WARNING  Not Found: /accounts/
+2020-12-27 20:57:34,772 django.request 224 WARNING  Not Found: /accounts/loginout
+2020-12-27 20:58:25,088 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 20:58:30,321 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 20:58:36,725 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:02:57,038 django.request 224 ERROR    Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'translate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Development\03 Django\recruitment\jobs\views.py", line 19, in joblist
+    return HttpResponse(template.render(context))
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\loader_tags.py", line 103, in find_template
+    template, origin = context.template.engine.find_template(
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\loaders\base.py", line 29, in get_template
+    return Template(
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\loader_tags.py", line 213, in do_block
+    nodelist = parser.parse(('endblock',))
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\template\base.py", line 522, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 8: 'translate', expected 'endblock'. Did you forget to register or load this tag?
+2020-12-27 21:02:57,728 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:06:45,711 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:07:13,394 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:07:39,048 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:07:44,947 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:07:48,116 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:08:36,149 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:09:16,409 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:09:36,485 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:09:39,427 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:09:46,229 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:09:54,429 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:10:36,325 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:10:38,559 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:10:41,330 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:11:10,214 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:13:28,069 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:25:16,091 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\views.py changed, reloading.
+2020-12-27 21:25:20,049 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 21:25:47,270 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:28:56,379 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\views.py changed, reloading.
+2020-12-27 21:28:58,987 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 21:29:57,116 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:30:05,085 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:31:38,314 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:32:04,460 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:36:49,092 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\admin.py changed, reloading.
+2020-12-27 21:42:17,791 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 21:42:55,606 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:43:01,960 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:43:04,720 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:43:53,184 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:43:59,586 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:44:01,525 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:44:24,442 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:44:27,038 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:44:31,575 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:02,697 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:04,998 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:09,469 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:21,410 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:47,491 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:49,925 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:55,966 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:57,438 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:57,833 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:45:59,434 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 21:46:01,208 django.request 224 WARNING  Not Found: /favicon.ico
