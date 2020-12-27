@@ -275,3 +275,6 @@ AttributeError: 'CandidateAdmin' object has no attribute 'default_list_editable'
 2020-12-27 18:34:42,011 django.request 224 WARNING  Not Found: /favicon.ico
 2020-12-27 18:35:11,655 django.request 224 WARNING  Not Found: /favicon.ico
 2020-12-27 18:35:14,657 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 18:43:06,942 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 18:43:16,390 django.request 224 WARNING  Not Found: /
+2020-12-27 18:43:35,517 django.request 224 WARNING  Not Found: /favicon.ico
