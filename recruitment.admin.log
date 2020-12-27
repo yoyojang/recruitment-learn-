@@ -278,3 +278,163 @@ AttributeError: 'CandidateAdmin' object has no attribute 'default_list_editable'
 2020-12-27 18:43:06,942 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
 2020-12-27 18:43:16,390 django.request 224 WARNING  Not Found: /
 2020-12-27 18:43:35,517 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:12:10,259 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 19:12:45,386 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:12:47,754 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:12:53,902 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:13:53,756 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:13:55,825 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:14:00,210 interview.admin 116 INFO     interviewer is in user's group for yoyo3_inter
+2020-12-27 19:14:00,212 interview.admin 116 INFO     interviewer is in user's group for yoyo3_inter
+2020-12-27 19:14:00,963 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:14:20,008 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:20:39,937 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 19:20:42,366 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 19:22:35,171 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 19:22:37,376 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 19:22:47,642 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:22:49,198 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1693, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 109, in get_changelist_instance
+    return super(CandidateAdmin, self).get_changelist_instance(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 731, in get_changelist_instance
+    if self.get_actions(request):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 901, in get_actions
+    actions = self._filter_actions_by_permissions(request, self._get_base_actions())
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in _filter_actions_by_permissions
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in <genexpr>
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 59, in has_export_permission
+    return request.user.has_perm('%s %s' % (opts.app_lable, 'export'))
+AttributeError: 'Options' object has no attribute 'app_lable'
+2020-12-27 19:22:49,777 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:23:16,257 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:23:18,127 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:23:48,552 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1693, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 109, in get_changelist_instance
+    return super(CandidateAdmin, self).get_changelist_instance(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 731, in get_changelist_instance
+    if self.get_actions(request):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 901, in get_actions
+    actions = self._filter_actions_by_permissions(request, self._get_base_actions())
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in _filter_actions_by_permissions
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in <genexpr>
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 59, in has_export_permission
+    return request.user.has_perm('%s %s' % (opts.app_lable, 'export'))
+AttributeError: 'Options' object has no attribute 'app_lable'
+2020-12-27 19:24:38,424 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 19:24:40,775 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 19:24:42,699 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1693, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 109, in get_changelist_instance
+    return super(CandidateAdmin, self).get_changelist_instance(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 731, in get_changelist_instance
+    if self.get_actions(request):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 901, in get_actions
+    actions = self._filter_actions_by_permissions(request, self._get_base_actions())
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in _filter_actions_by_permissions
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in <genexpr>
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 59, in has_export_permission
+    return request.user.has_perm('%s.%s' % (opts.app_lable, 'export'))
+AttributeError: 'Options' object has no attribute 'app_lable'
+2020-12-27 19:27:18,684 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:27:20,231 django.request 224 ERROR    Internal Server Error: /admin/interview/candidate/
+Traceback (most recent call last):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\core\handlers\base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 614, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\views\decorators\cache.py", line 44, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\sites.py", line 233, in inner
+    return view(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 43, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 1693, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 109, in get_changelist_instance
+    return super(CandidateAdmin, self).get_changelist_instance(request)
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 731, in get_changelist_instance
+    if self.get_actions(request):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 901, in get_actions
+    actions = self._filter_actions_by_permissions(request, self._get_base_actions())
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in _filter_actions_by_permissions
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "C:\Users\Jiang Zhongyang\AppData\Roaming\Python\Python38\site-packages\django\contrib\admin\options.py", line 888, in <genexpr>
+    if any(has_permission(request) for has_permission in permission_checks):
+  File "D:\Development\03 Django\recruitment\interview\admin.py", line 59, in has_export_permission
+    return request.user.has_perm('%s.%s' % (opts.app_lable, 'export'))
+AttributeError: 'Options' object has no attribute 'app_lable'
+2020-12-27 19:27:20,782 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:28:22,892 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2020-12-27 19:28:25,083 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2020-12-27 19:28:28,572 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:28:44,500 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:28:46,635 django.request 224 WARNING  Not Found: /favicon.ico
+2020-12-27 19:29:12,670 django.request 224 WARNING  Not Found: /favicon.ico

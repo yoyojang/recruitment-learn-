@@ -1,10 +1,14 @@
 from django.contrib import admin
 from django.http import HttpResponse
+from django.db.models import Q
 from interview.models import Candidate
+
 
 import logging
 import csv
 from datetime import datetime
+
+from interview import candidate_field as cf
 
 logger = logging.getLogger(__name__)
 
@@ -40,6 +44,7 @@ def export_model_as_csv(modeladmin, request, queryset):
     return response
 
 export_model_as_csv.short_description = u'导出为CSV文件'
+export_model_as_csv.allowed_permissions = ('export',)   # 设置用户操作权限（已在model里设置）
 
 # 候选人管理类
 class CandidateAdmin(admin.ModelAdmin):
@@ -47,6 +52,11 @@ class CandidateAdmin(admin.ModelAdmin):
     exclude = ('creator','created_date','modified_date')
 
     actions = (export_model_as_csv,)    #添加页面动作
+
+    # 当前用户是否有导出权限
+    def has_export_permission(self, request):
+        opts = self.opts
+        return request.user.has_perm('%s.%s' % (opts.app_label, 'export'))
 
     # 显示排列
     list_display = (
@@ -63,6 +73,25 @@ class CandidateAdmin(admin.ModelAdmin):
     # 排序
     ordering = ('hr_result', 'second_result','first_result')
 
+    # 一面面试官仅填写一面反馈， 二面面试官可以填写二面反馈
+    def get_fieldsets(self, request, obj=None):
+        group_names = self.get_group_names(request.user)
+
+        if 'interviewer' in group_names and obj.first_interviewer_user == request.user:
+            return cf.default_fieldsets_first
+        if 'interviewer' in group_names and obj.second_interviewer_user == request.user:
+            return cf.default_fieldsets_second
+        return cf.default_fieldsets
+
+    # 对于非管理员，非HR，获取自己是一面面试官或者二面面试官的候选人集合:s
+    def get_queryset(self, request):  # show data only owned by the user
+        qs = super(CandidateAdmin, self).get_queryset(request)
+
+        group_names = self.get_group_names(request.user)
+        if request.user.is_superuser or 'hr' in group_names:
+            return qs
+        return Candidate.objects.filter(
+            Q(first_interviewer_user=request.user) | Q(second_interviewer_user=request.user))
     # readonly_fields = ('first_interviewer_user', 'second_interviewer_user')  # 设置字段为只读、不可更改
 
     # list_editable = ('first_interviewer_user', 'second_interviewer_user')   # 直接在列表上修改内容
