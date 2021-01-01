@@ -1,6 +1,17 @@
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
 <H1>提交简历</H1>
-<form method="post">
+<form method="post" method="post" class="form" enctype="multipart/form-data" style="width:600px;margin-left:5px">
     {% csrf_token %}
-    {{ form.as_p }}
+    {% bootstrap_form form %}
+{#    {{ form.as_p }}#}
     <input type="submit" value="Send message">
 </form>
