@@ -1111,3 +1111,10 @@ Traceback (most recent call last):
   File "D:\Development\03 Django\recruitment\interview\admin.py", line 26, in notify_interviewer
     interviewers = obj.first_interviewer_user.username + ";" + interviewers
 AttributeError: 'NoneType' object has no attribute 'username'
+2021-01-01 17:04:41,023 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-01 17:05:29,371 django.request 224 WARNING  Not Found: /favicon.ico
+2021-01-01 17:05:31,702 django.request 224 WARNING  Not Found: /favicon.ico
+2021-01-01 17:06:29,974 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2021-01-01 17:06:32,596 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-01 17:06:48,675 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
+2021-01-01 17:06:50,986 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader

@@ -8,6 +8,8 @@ urlpatterns = [
     # 职位详情
     url(r"^job/(?P<job_id>\d+)/$", views.detail, name="detail"),
 
+    path('resume/<int:pk>/', views.ResumeDetailView.as_view(), name='resume-detail'),
+
     # 首页自动跳转到 职位列表
     url(r"^$", views.joblist, name="name"),
 

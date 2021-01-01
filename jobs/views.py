@@ -29,6 +29,11 @@ def detail(request, job_id):
 
     return render(request, 'job.html', {'job': job})
 
+from django.views.generic.detail import DetailView
+class ResumeDetailView(DetailView):
+    """简历详情页"""
+    model = Resume
+    template_name = 'resume_detail.html'
 
 class ResumeCreateView(LoginRequiredMixin, CreateView):
     """    简历职位页面  """

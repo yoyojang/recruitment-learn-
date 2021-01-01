@@ -2,7 +2,11 @@ from django.contrib import admin
 from django.contrib import messages
 from django.http import HttpResponse
 from django.db.models import Q
+from django.utils.safestring import mark_safe
+
+
 from interview.models import Candidate
+from jobs.models import Resume
 
 
 import logging
@@ -76,7 +80,7 @@ class CandidateAdmin(admin.ModelAdmin):
 
     # 显示排列
     list_display = (
-        "username","city","bachelor_school","first_score","first_result","first_interviewer_user",
+        "username","city","bachelor_school","get_resume","first_score","first_result","first_interviewer_user",
         "second_result","second_interviewer_user","hr_score","hr_result","last_editor"
     )
 
@@ -88,6 +92,15 @@ class CandidateAdmin(admin.ModelAdmin):
 
     # 排序
     ordering = ('hr_result', 'second_result','first_result')
+
+    # 增加一个自定义字段，方法
+    def get_resume(self,obj):
+        if not obj.phone:
+            return ""
+        resumes = Resume.objects.filter(phone=obj.phone)
+        if resumes and len(resumes) > 0:
+            return mark_safe(u'<a href="/resume/%s" target="_blank">%s</a' % (resumes[0].id, "查看简历"))
+        return ""
 
     # 一面面试官仅填写一面反馈， 二面面试官可以填写二面反馈
     def get_fieldsets(self, request, obj=None):
