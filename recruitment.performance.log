@@ -1,0 +1,4 @@
+2021-01-02 16:00:57,747 interview.performance 12 INFO     8.1093008518219 /admin/interview/candidate/ {}
+2021-01-02 16:01:01,229 interview.performance 12 INFO     0.0847787857055664 / {}
+2021-01-02 16:01:41,328 interview.performance 12 INFO     0.03185772895812988 /job/1/ {}
+2021-01-02 16:01:44,207 interview.performance 12 INFO     0.35239744186401367 /resume/add/ {'apply_position': '工程师', 'city': '北京'}
