@@ -1119,3 +1119,17 @@ AttributeError: 'NoneType' object has no attribute 'username'
 2021-01-01 17:06:48,675 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\interview\admin.py changed, reloading.
 2021-01-01 17:06:50,986 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
 2021-01-02 16:00:41,947 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 16:51:09,918 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 16:53:29,738 django.request 224 WARNING  Not Found: /favicon.ico
+2021-01-02 17:41:16,797 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\settings\base.py changed, reloading.
+2021-01-02 17:41:20,198 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 18:12:19,287 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\recruitment\urls.py changed, reloading.
+2021-01-02 18:12:21,587 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 18:17:42,454 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\admin.py changed, reloading.
+2021-01-02 18:17:45,131 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 18:18:06,231 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\admin.py changed, reloading.
+2021-01-02 18:18:08,769 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 18:18:17,965 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\admin.py changed, reloading.
+2021-01-02 18:18:20,381 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
+2021-01-02 18:19:57,578 django.utils.autoreload 236 INFO     D:\Development\03 Django\recruitment\jobs\admin.py changed, reloading.
+2021-01-02 18:19:59,879 django.utils.autoreload 612 INFO     Watching for file changes with StatReloader
